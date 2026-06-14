@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NETFLUX - Watch movies, TV shows, and more. Unlimited streaming of top-rated content.">
+    <title>NETFLUX — Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-left">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-logo">NETFLUX</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box" id="searchBox">
+                <span class="search-icon" id="searchIcon">🔍</span>
+                <input type="text" class="search-input" id="searchInput" placeholder="Titles, people, genres">
+            </div>
+            <span class="notification-icon">🔔</span>
+            <div class="profile-container">
+                <div class="profile-img">P</div>
+                <div class="profile-dropdown">
+                    <a href="#">👤 Manage Profiles</a>
+                    <a href="#">🔄 Transfer Profile</a>
+                    <a href="#">👤 Account</a>
+                    <a href="#">❓ Help Center</a>
+                    <a href="#">🚪 Sign out of NETFLUX</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg" style="background-image: url('assets/images/hero_banner.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tag">▶ N Series</p>
+            <h1 class="hero-title">Stranger Dimensions</h1>
+            <div class="hero-meta">
+                <span class="match">98% Match</span>
+                <span class="year">2024</span>
+                <span class="rating">TV-MA</span>
+                <span>2 Seasons</span>
+            </div>
+            <p class="hero-description">When a mysterious portal opens in a quiet suburban neighborhood, a group of unlikely heroes must navigate parallel dimensions to prevent the collapse of reality itself.</p>
+            <div class="hero-buttons">
+                <button class="hero-btn play">▶ Play</button>
+                <button class="hero-btn info">ℹ More Info</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTENT ROW 1: TRENDING NOW ========== -->
+    <section class="content-section" id="trending">
+        <h2 class="content-title">🔥 Trending Now</h2>
+        <!-- Skeleton Loading -->
+        <div class="skeleton-wrapper">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </div>
+        <div class="content-row-wrapper">
+            <button class="arrow left" aria-label="Scroll left">‹</button>
+            <div class="content-row">
+                <div class="card" data-title="Midnight Protocol" data-year="2024" data-rating="TV-MA" data-description="A brilliant hacker discovers a government conspiracy hidden in the deep web. With time running out, she must expose the truth before the system erases her existence." data-image="assets/images/poster_1.png" data-match="95" data-duration="2h 14m" data-cast="Emma Stone, Oscar Isaac, Dev Patel" data-genres="Thriller,Sci-Fi,Cyberpunk">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Midnight Protocol">
+                    <div class="card-info">
+                        <div class="card-title">Midnight Protocol</div>
+                        <div class="card-meta">
+                            <span class="match">95% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">TV-MA</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Dragon's Keep" data-year="2023" data-rating="PG-13" data-description="In a world where dragons have returned, a young warrior must forge an alliance between humans and dragons to defeat an ancient evil threatening to consume the realm." data-image="assets/images/poster_2.png" data-match="92" data-duration="2h 31m" data-cast="Timothée Chalamet, Zendaya, Idris Elba" data-genres="Fantasy,Adventure,Epic">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="Dragon's Keep">
+                    <div class="card-info">
+                        <div class="card-title">Dragon's Keep</div>
+                        <div class="card-meta">
+                            <span class="match">92% Match</span>
+                            <span class="year">2023</span>
+                            <span class="rating-badge">PG-13</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Neon Streets" data-year="2024" data-rating="R" data-description="In a rain-soaked cyberpunk metropolis, a disgraced cop teams up with an android informant to take down a corrupt tech mogul who controls the city's neural network." data-image="assets/images/poster_1.png" data-match="88" data-duration="1h 58m" data-cast="Ryan Gosling, Ana de Armas, Jared Leto" data-genres="Cyberpunk,Action,Neo-Noir">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Neon Streets">
+                    <div class="card-info">
+                        <div class="card-title">Neon Streets</div>
+                        <div class="card-meta">
+                            <span class="match">88% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">R</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="The Heist" data-year="2024" data-rating="PG-13" data-description="Five ex-convicts are brought together for one final job — stealing a priceless painting from the world's most secure museum during a live charity gala." data-image="assets/images/poster_2.png" data-match="90" data-duration="2h 05m" data-cast="George Clooney, Brad Pitt, Lupita Nyong'o" data-genres="Comedy,Crime,Heist">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="The Heist">
+                    <div class="card-info">
+                        <div class="card-title">The Heist</div>
+                        <div class="card-meta">
+                            <span class="match">90% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">PG-13</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Shadow Ops" data-year="2023" data-rating="TV-MA" data-description="An elite black-ops unit goes rogue after discovering their own government has been using them as pawns in a global weapons conspiracy." data-image="assets/images/poster_1.png" data-match="87" data-duration="6 Seasons" data-cast="John David Washington, Florence Pugh" data-genres="Action,Spy,Military">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Shadow Ops">
+                    <div class="card-info">
+                        <div class="card-title">Shadow Ops</div>
+                        <div class="card-meta">
+                            <span class="match">87% Match</span>
+                            <span class="year">2023</span>
+                            <span class="rating-badge">TV-MA</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Echoes" data-year="2024" data-rating="TV-14" data-description="A renowned psychologist begins to question her own sanity when her patients start sharing the same terrifying nightmare — and she realizes she's in it too." data-image="assets/images/poster_2.png" data-match="93" data-duration="1 Season" data-cast="Cate Blanchett, Rami Malek, Saoirse Ronan" data-genres="Thriller,Mystery,Psychological">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="Echoes">
+                    <div class="card-info">
+                        <div class="card-title">Echoes</div>
+                        <div class="card-meta">
+                            <span class="match">93% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">TV-14</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right" aria-label="Scroll right">›</button>
+        </div>
+    </section>
+
+    <!-- ========== CONTENT ROW 2: NETFLIX ORIGINALS ========== -->
+    <section class="content-section" id="originals">
+        <h2 class="content-title">🎬 NETFLUX Originals</h2>
+        <div class="skeleton-wrapper">
+            <div class="skeleton-card" style="height:280px;width:160px"></div>
+            <div class="skeleton-card" style="height:280px;width:160px"></div>
+            <div class="skeleton-card" style="height:280px;width:160px"></div>
+            <div class="skeleton-card" style="height:280px;width:160px"></div>
+            <div class="skeleton-card" style="height:280px;width:160px"></div>
+            <div class="skeleton-card" style="height:280px;width:160px"></div>
+        </div>
+        <div class="content-row-wrapper">
+            <button class="arrow left" aria-label="Scroll left">‹</button>
+            <div class="content-row">
+                <div class="card original" data-title="Stranger Dimensions" data-year="2024" data-rating="TV-MA" data-description="When a mysterious portal opens in a quiet suburban neighborhood, a group of unlikely heroes must navigate parallel dimensions to prevent the collapse of reality itself." data-image="assets/images/hero_banner.png" data-match="98" data-duration="2 Seasons" data-cast="Millie Bobby Brown, Finn Wolfhard, Winona Ryder" data-genres="Sci-Fi,Horror,Drama">
+                    <img class="card-img" src="assets/images/hero_banner.png" alt="Stranger Dimensions">
+                    <div class="card-info">
+                        <div class="card-title">Stranger Dimensions</div>
+                        <div class="card-meta">
+                            <span class="match">98%</span>
+                            <span class="rating-badge">TV-MA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card original" data-title="The Crown of Thorns" data-year="2023" data-rating="TV-MA" data-description="A sweeping historical drama about the rise and fall of a dynasty, told through the eyes of a queen who will stop at nothing to protect her throne." data-image="assets/images/poster_2.png" data-match="94" data-duration="3 Seasons" data-cast="Olivia Colman, Helena Bonham Carter" data-genres="Drama,Historical,Period">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="The Crown of Thorns">
+                    <div class="card-info">
+                        <div class="card-title">The Crown of Thorns</div>
+                        <div class="card-meta">
+                            <span class="match">94%</span>
+                            <span class="rating-badge">TV-MA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card original" data-title="Code Black" data-year="2024" data-rating="TV-14" data-description="Inside the walls of the country's busiest emergency room, doctors and nurses fight impossible odds every day to save lives, while battling their own demons." data-image="assets/images/poster_1.png" data-match="89" data-duration="1 Season" data-cast="Sandra Oh, Sterling K. Brown" data-genres="Drama,Medical,Thriller">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Code Black">
+                    <div class="card-info">
+                        <div class="card-title">Code Black</div>
+                        <div class="card-meta">
+                            <span class="match">89%</span>
+                            <span class="rating-badge">TV-14</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card original" data-title="Dark Waters" data-year="2024" data-rating="TV-MA" data-description="A deep-sea research team discovers a massive underwater civilization that has been watching humanity for centuries — and they don't want to be found." data-image="assets/images/poster_2.png" data-match="91" data-duration="1 Season" data-cast="Pedro Pascal, Awkwafina, Jason Momoa" data-genres="Sci-Fi,Thriller,Adventure">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="Dark Waters">
+                    <div class="card-info">
+                        <div class="card-title">Dark Waters</div>
+                        <div class="card-meta">
+                            <span class="match">91%</span>
+                            <span class="rating-badge">TV-MA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card original" data-title="The Last Dance" data-year="2023" data-rating="TV-PG" data-description="A retired ballerina returns to the stage for one final performance, but rivalries, romance, and a dark secret from her past threaten everything." data-image="assets/images/poster_1.png" data-match="86" data-duration="2 Seasons" data-cast="Natalie Portman, Michaela Coel" data-genres="Drama,Dance,Romance">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="The Last Dance">
+                    <div class="card-info">
+                        <div class="card-title">The Last Dance</div>
+                        <div class="card-meta">
+                            <span class="match">86%</span>
+                            <span class="rating-badge">TV-PG</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card original" data-title="Quantum Shift" data-year="2024" data-rating="TV-MA" data-description="When a physicist accidentally opens a rift between parallel universes, she must team up with her alternate selves to prevent a catastrophic chain reaction." data-image="assets/images/hero_banner.png" data-match="96" data-duration="1 Season" data-cast="Margot Robbie, Oscar Isaac, Ke Huy Quan" data-genres="Sci-Fi,Mystery,Adventure">
+                    <img class="card-img" src="assets/images/hero_banner.png" alt="Quantum Shift">
+                    <div class="card-info">
+                        <div class="card-title">Quantum Shift</div>
+                        <div class="card-meta">
+                            <span class="match">96%</span>
+                            <span class="rating-badge">TV-MA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right" aria-label="Scroll right">›</button>
+        </div>
+    </section>
+
+    <!-- ========== CONTENT ROW 3: TOP RATED ========== -->
+    <section class="content-section" id="topRated">
+        <h2 class="content-title">⭐ Top Rated</h2>
+        <div class="skeleton-wrapper">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </div>
+        <div class="content-row-wrapper">
+            <button class="arrow left" aria-label="Scroll left">‹</button>
+            <div class="content-row">
+                <div class="card" data-title="Arctic" data-year="2024" data-rating="PG-13" data-description="Stranded in the frozen wilderness after a plane crash, a lone survivor must fight sub-zero temperatures, wild predators, and her own fading hope to make it home." data-image="assets/images/poster_2.png" data-match="97" data-duration="1h 48m" data-cast="Florence Pugh, Mads Mikkelsen" data-genres="Survival,Drama,Adventure">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="Arctic">
+                    <div class="card-info">
+                        <div class="card-title">Arctic</div>
+                        <div class="card-meta">
+                            <span class="match">97% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">PG-13</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Rise of Empires" data-year="2023" data-rating="R" data-description="The untold story of a general who defied an empire and led a rebellion that changed the course of history forever." data-image="assets/images/poster_1.png" data-match="94" data-duration="2h 42m" data-cast="Denzel Washington, Viola Davis, Daniel Kaluuya" data-genres="Historical,War,Epic">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Rise of Empires">
+                    <div class="card-info">
+                        <div class="card-title">Rise of Empires</div>
+                        <div class="card-meta">
+                            <span class="match">94% Match</span>
+                            <span class="year">2023</span>
+                            <span class="rating-badge">R</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Starfall" data-year="2024" data-rating="PG-13" data-description="Humanity's first interstellar colony ship encounters an ancient alien signal that will change everything we know about our place in the universe." data-image="assets/images/poster_2.png" data-match="96" data-duration="2h 20m" data-cast="Timothée Chalamet, Zendaya, Jeff Bridges" data-genres="Sci-Fi,Space,Adventure">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="Starfall">
+                    <div class="card-info">
+                        <div class="card-title">Starfall</div>
+                        <div class="card-meta">
+                            <span class="match">96% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">PG-13</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Blood Moon" data-year="2024" data-rating="R" data-description="On the night of a rare blood moon, a small town's darkest secrets rise from the dead — literally. A gripping horror that keeps you on the edge." data-image="assets/images/poster_1.png" data-match="89" data-duration="1h 52m" data-cast="Lupita Nyong'o, Robert Pattinson" data-genres="Horror,Supernatural,Thriller">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Blood Moon">
+                    <div class="card-info">
+                        <div class="card-title">Blood Moon</div>
+                        <div class="card-meta">
+                            <span class="match">89% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">R</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="The Verdict" data-year="2023" data-rating="TV-MA" data-description="A defense attorney takes on an impossible case — defending a man the entire nation believes is guilty. But as she digs deeper, the truth becomes more terrifying than the crime." data-image="assets/images/poster_2.png" data-match="95" data-duration="3 Seasons" data-cast="Cate Blanchett, Mahershala Ali" data-genres="Legal,Drama,Thriller">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="The Verdict">
+                    <div class="card-info">
+                        <div class="card-title">The Verdict</div>
+                        <div class="card-meta">
+                            <span class="match">95% Match</span>
+                            <span class="year">2023</span>
+                            <span class="rating-badge">TV-MA</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Wild Hunt" data-year="2024" data-rating="TV-14" data-description="When mythological creatures begin appearing in the modern world, a secret society of hunters must protect humanity from an ancient prophecy coming true." data-image="assets/images/poster_1.png" data-match="91" data-duration="2 Seasons" data-cast="Henry Cavill, Anya Taylor-Joy" data-genres="Fantasy,Action,Supernatural">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Wild Hunt">
+                    <div class="card-info">
+                        <div class="card-title">Wild Hunt</div>
+                        <div class="card-meta">
+                            <span class="match">91% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">TV-14</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right" aria-label="Scroll right">›</button>
+        </div>
+    </section>
+
+    <!-- ========== CONTENT ROW 4: COMEDY ========== -->
+    <section class="content-section" id="comedy">
+        <h2 class="content-title">😂 Comedy</h2>
+        <div class="skeleton-wrapper">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </div>
+        <div class="content-row-wrapper">
+            <button class="arrow left" aria-label="Scroll left">‹</button>
+            <div class="content-row">
+                <div class="card" data-title="The Office Reboot" data-year="2024" data-rating="TV-PG" data-description="A brand new documentary crew visits a quirky paper company's office branch in Austin, Texas. Same format, new chaos, hilarious results." data-image="assets/images/poster_2.png" data-match="88" data-duration="2 Seasons" data-cast="Steve Carell (cameo), Quinta Brunson" data-genres="Comedy,Mockumentary,Sitcom">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="The Office Reboot">
+                    <div class="card-info">
+                        <div class="card-title">The Office Reboot</div>
+                        <div class="card-meta">
+                            <span class="match">88% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">TV-PG</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Wedding Crashers 2" data-year="2024" data-rating="R" data-description="The OG wedding crashers are back — but now their kids are getting married. And both dads are determined to throw the most epic wedding ever." data-image="assets/images/poster_1.png" data-match="82" data-duration="1h 54m" data-cast="Vince Vaughn, Owen Wilson, Rachel McAdams" data-genres="Comedy,Romance,Sequel">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Wedding Crashers 2">
+                    <div class="card-info">
+                        <div class="card-title">Wedding Crashers 2</div>
+                        <div class="card-meta">
+                            <span class="match">82% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">R</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Deadpan" data-year="2023" data-rating="TV-MA" data-description="A struggling stand-up comedian accidentally becomes a viral sensation after the worst set of her career is recorded and uploaded without her consent." data-image="assets/images/poster_2.png" data-match="90" data-duration="3 Seasons" data-cast="Awkwafina, Kumail Nanjiani, Bowen Yang" data-genres="Comedy,Drama,Stand-Up">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="Deadpan">
+                    <div class="card-info">
+                        <div class="card-title">Deadpan</div>
+                        <div class="card-meta">
+                            <span class="match">90% Match</span>
+                            <span class="year">2023</span>
+                            <span class="rating-badge">TV-MA</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Mission: Improbable" data-year="2024" data-rating="PG-13" data-description="An accountant is mistaken for a super spy and accidentally foils an international crime ring — all while trying to file his taxes on time." data-image="assets/images/poster_1.png" data-match="85" data-duration="1h 47m" data-cast="Ryan Reynolds, Jack Black, Ke Huy Quan" data-genres="Comedy,Action,Spoof">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Mission: Improbable">
+                    <div class="card-info">
+                        <div class="card-title">Mission: Improbable</div>
+                        <div class="card-meta">
+                            <span class="match">85% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">PG-13</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Family Feud" data-year="2024" data-rating="TV-PG" data-description="Three generations of a chaotic family live under one roof. Between cultural clashes and generation gaps, love always finds a way — eventually." data-image="assets/images/poster_2.png" data-match="87" data-duration="4 Seasons" data-cast="Eugene Levy, Catherine O'Hara, Simu Liu" data-genres="Comedy,Family,Sitcom">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="Family Feud">
+                    <div class="card-info">
+                        <div class="card-title">Family Feud</div>
+                        <div class="card-meta">
+                            <span class="match">87% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">TV-PG</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Roommates" data-year="2023" data-rating="TV-14" data-description="Four strangers become roommates in NYC. They have nothing in common — except a lease they can't break and a knack for getting into ridiculous situations." data-image="assets/images/poster_1.png" data-match="91" data-duration="2 Seasons" data-cast="Donald Glover, Phoebe Waller-Bridge" data-genres="Comedy,Urban,Ensemble">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Roommates">
+                    <div class="card-info">
+                        <div class="card-title">Roommates</div>
+                        <div class="card-meta">
+                            <span class="match">91% Match</span>
+                            <span class="year">2023</span>
+                            <span class="rating-badge">TV-14</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right" aria-label="Scroll right">›</button>
+        </div>
+    </section>
+
+    <!-- ========== CONTENT ROW 5: ACTION & ADVENTURE ========== -->
+    <section class="content-section" id="action">
+        <h2 class="content-title">💥 Action & Adventure</h2>
+        <div class="skeleton-wrapper">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </div>
+        <div class="content-row-wrapper">
+            <button class="arrow left" aria-label="Scroll left">‹</button>
+            <div class="content-row">
+                <div class="card" data-title="Velocity" data-year="2024" data-rating="PG-13" data-description="The world's fastest street racer is pulled into a dangerous underworld when his brother goes missing. High-octane action with heart-pounding chases." data-image="assets/images/poster_1.png" data-match="86" data-duration="2h 08m" data-cast="John Boyega, LaKeith Stanfield, Brie Larson" data-genres="Action,Racing,Thriller">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Velocity">
+                    <div class="card-info">
+                        <div class="card-title">Velocity</div>
+                        <div class="card-meta">
+                            <span class="match">86% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">PG-13</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Iron Fist: Reborn" data-year="2024" data-rating="TV-MA" data-description="A retired martial arts champion must return to the underground fighting circuit to save his dojo from a ruthless crime syndicate." data-image="assets/images/poster_2.png" data-match="90" data-duration="1 Season" data-cast="Simu Liu, Tony Leung, Michelle Yeoh" data-genres="Action,Martial Arts,Drama">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="Iron Fist: Reborn">
+                    <div class="card-info">
+                        <div class="card-title">Iron Fist: Reborn</div>
+                        <div class="card-meta">
+                            <span class="match">90% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">TV-MA</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Extraction 3" data-year="2024" data-rating="R" data-description="Tyler Rake is back for one more impossible mission — extracting a political prisoner from a heavily fortified island fortress in the middle of the Pacific." data-image="assets/images/poster_1.png" data-match="93" data-duration="2h 15m" data-cast="Chris Hemsworth, Idris Elba, Golshifteh Farahani" data-genres="Action,Thriller,Military">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Extraction 3">
+                    <div class="card-info">
+                        <div class="card-title">Extraction 3</div>
+                        <div class="card-meta">
+                            <span class="match">93% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">R</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Thunder Road" data-year="2023" data-rating="PG-13" data-description="A lone bounty hunter roams a post-apocalyptic wasteland on a custom motorcycle, hunting down warlords who have enslaved the last free cities." data-image="assets/images/poster_2.png" data-match="88" data-duration="1h 56m" data-cast="Tom Hardy, Charlize Theron, Yahya Abdul-Mateen II" data-genres="Action,Post-Apocalyptic,Western">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="Thunder Road">
+                    <div class="card-info">
+                        <div class="card-title">Thunder Road</div>
+                        <div class="card-meta">
+                            <span class="match">88% Match</span>
+                            <span class="year">2023</span>
+                            <span class="rating-badge">PG-13</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="Titan's Fall" data-year="2024" data-rating="PG-13" data-description="Earth's mightiest heroes face their greatest threat yet when an interdimensional titan arrives to claim our planet as his new domain." data-image="assets/images/poster_1.png" data-match="92" data-duration="2h 35m" data-cast="Dwayne Johnson, Gal Gadot, Keanu Reeves" data-genres="Action,Superhero,Sci-Fi">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Titan's Fall">
+                    <div class="card-info">
+                        <div class="card-title">Titan's Fall</div>
+                        <div class="card-meta">
+                            <span class="match">92% Match</span>
+                            <span class="year">2024</span>
+                            <span class="rating-badge">PG-13</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-title="The Outpost" data-year="2023" data-rating="R" data-description="Based on true events — a small team of soldiers defends a remote mountain outpost against an overwhelming enemy force in the most intense battle of the decade." data-image="assets/images/poster_2.png" data-match="95" data-duration="2h 22m" data-cast="Austin Butler, Jonathan Majors, Barry Keoghan" data-genres="War,Action,Drama">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="The Outpost">
+                    <div class="card-info">
+                        <div class="card-title">The Outpost</div>
+                        <div class="card-meta">
+                            <span class="match">95% Match</span>
+                            <span class="year">2023</span>
+                            <span class="rating-badge">R</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn play-btn" title="Play">▶</button>
+                            <button class="card-action-btn add-btn" title="Add to My List">+</button>
+                            <button class="card-action-btn" title="Like">👍</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right" aria-label="Scroll right">›</button>
+        </div>
+    </section>
+
+    <!-- ========== CONTENT ROW 6: CONTINUE WATCHING ========== -->
+    <section class="content-section" id="continueWatching">
+        <h2 class="content-title">📺 Continue Watching for Piyush</h2>
+        <div class="skeleton-wrapper">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </div>
+        <div class="content-row-wrapper">
+            <button class="arrow left" aria-label="Scroll left">‹</button>
+            <div class="content-row">
+                <div class="card" data-title="Stranger Dimensions" data-year="2024" data-rating="TV-MA" data-description="When a mysterious portal opens in a quiet suburban neighborhood, a group of unlikely heroes must navigate parallel dimensions to prevent the collapse of reality itself." data-image="assets/images/hero_banner.png" data-match="98" data-duration="S2 E4" data-cast="Millie Bobby Brown, Finn Wolfhard" data-genres="Sci-Fi,Horror,Drama">
+                    <img class="card-img" src="assets/images/hero_banner.png" alt="Stranger Dimensions">
+                    <div class="card-info">
+                        <div class="card-title">Stranger Dimensions</div>
+                        <div class="card-meta">
+                            <span class="match">S2 E4</span>
+                        </div>
+                    </div>
+                    <div class="card-progress"><div class="card-progress-bar" style="width: 65%;"></div></div>
+                </div>
+                <div class="card" data-title="Midnight Protocol" data-year="2024" data-rating="TV-MA" data-description="A brilliant hacker discovers a government conspiracy hidden in the deep web." data-image="assets/images/poster_1.png" data-match="95" data-duration="1h 22m left" data-cast="Emma Stone, Oscar Isaac" data-genres="Thriller,Sci-Fi,Cyberpunk">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Midnight Protocol">
+                    <div class="card-info">
+                        <div class="card-title">Midnight Protocol</div>
+                        <div class="card-meta">
+                            <span class="match">1h 22m left</span>
+                        </div>
+                    </div>
+                    <div class="card-progress"><div class="card-progress-bar" style="width: 35%;"></div></div>
+                </div>
+                <div class="card" data-title="Dragon's Keep" data-year="2023" data-rating="PG-13" data-description="In a world where dragons have returned, a young warrior must forge an alliance." data-image="assets/images/poster_2.png" data-match="92" data-duration="S1 E7" data-cast="Timothée Chalamet, Zendaya" data-genres="Fantasy,Adventure,Epic">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="Dragon's Keep">
+                    <div class="card-info">
+                        <div class="card-title">Dragon's Keep</div>
+                        <div class="card-meta">
+                            <span class="match">S1 E7</span>
+                        </div>
+                    </div>
+                    <div class="card-progress"><div class="card-progress-bar" style="width: 80%;"></div></div>
+                </div>
+                <div class="card" data-title="Echoes" data-year="2024" data-rating="TV-14" data-description="A renowned psychologist begins to question her own sanity when her patients start sharing the same nightmare." data-image="assets/images/poster_1.png" data-match="93" data-duration="S1 E3" data-cast="Cate Blanchett, Rami Malek" data-genres="Thriller,Mystery,Psychological">
+                    <img class="card-img" src="assets/images/poster_1.png" alt="Echoes">
+                    <div class="card-info">
+                        <div class="card-title">Echoes</div>
+                        <div class="card-meta">
+                            <span class="match">S1 E3</span>
+                        </div>
+                    </div>
+                    <div class="card-progress"><div class="card-progress-bar" style="width: 20%;"></div></div>
+                </div>
+                <div class="card" data-title="The Heist" data-year="2024" data-rating="PG-13" data-description="Five ex-convicts are brought together for one final job." data-image="assets/images/poster_2.png" data-match="90" data-duration="52m left" data-cast="George Clooney, Brad Pitt" data-genres="Comedy,Crime,Heist">
+                    <img class="card-img" src="assets/images/poster_2.png" alt="The Heist">
+                    <div class="card-info">
+                        <div class="card-title">The Heist</div>
+                        <div class="card-meta">
+                            <span class="match">52m left</span>
+                        </div>
+                    </div>
+                    <div class="card-progress"><div class="card-progress-bar" style="width: 55%;"></div></div>
+                </div>
+                <div class="card" data-title="Quantum Shift" data-year="2024" data-rating="TV-MA" data-description="When a physicist accidentally opens a rift between parallel universes." data-image="assets/images/hero_banner.png" data-match="96" data-duration="S1 E1" data-cast="Margot Robbie, Oscar Isaac" data-genres="Sci-Fi,Mystery,Adventure">
+                    <img class="card-img" src="assets/images/hero_banner.png" alt="Quantum Shift">
+                    <div class="card-info">
+                        <div class="card-title">Quantum Shift</div>
+                        <div class="card-meta">
+                            <span class="match">S1 E1</span>
+                        </div>
+                    </div>
+                    <div class="card-progress"><div class="card-progress-bar" style="width: 10%;"></div></div>
+                </div>
+            </div>
+            <button class="arrow right" aria-label="Scroll right">›</button>
+        </div>
+    </section>
+
+    <!-- ========== MODAL ========== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-hero">
+                <img id="modalImage" src="" alt="Movie Preview">
+                <div class="modal-hero-gradient"></div>
+                <div class="modal-hero-content">
+                    <h2 class="modal-hero-title" id="modalTitle"></h2>
+                    <div class="modal-hero-buttons">
+                        <button class="hero-btn play">▶ Play</button>
+                        <button class="hero-btn info">+ My List</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info-grid">
+                    <div class="modal-main">
+                        <div class="modal-meta">
+                            <span class="match" id="modalMatch"></span>
+                            <span class="year" id="modalYear"></span>
+                            <span class="rating" id="modalRating"></span>
+                            <span class="duration" id="modalDuration"></span>
+                        </div>
+                        <p class="modal-description" id="modalDescription"></p>
+                    </div>
+                    <div class="modal-sidebar">
+                        <h4>Cast:</h4>
+                        <p id="modalCast"></p>
+                        <h4>Genres:</h4>
+                        <div class="genre-tags" id="modalGenres"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-social">
+            <a href="#" title="Facebook">📘</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter">🐦</a>
+            <a href="#" title="YouTube">📺</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Audio Description</a>
+            <a href="#">Help Center</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Media Center</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Jobs</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Legal Notices</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p class="footer-service">Service Code: NFLX-2024-IN</p>
+        <p class="footer-copyright">© 2024 NETFLUX Clone. Built with ❤ using HTML, CSS & JS. For educational purposes only.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
