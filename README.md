@@ -1,5 +1,7 @@
 # 🎬 Netflux — Premium Netflix Clone (Static Frontend)
 
+### 🚀 Live Demo: [netflux-piyush.vercel.app](https://netflux-piyush.vercel.app/)
+
 A high-fidelity, pixel-perfect frontend clone of **Netflix** built entirely using **Pure HTML, CSS, and Vanilla JavaScript** — without any external frameworks, libraries, or APIs. 
 
 This project features premium design aesthetics, interactive components, responsive web layouts, and custom AI-generated movie poster images to deliver a truly cinematic user experience.
